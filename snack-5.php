@@ -5,3 +5,11 @@ $paragraph = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod fugi
 $stringArray = explode('.', $paragraph);
 
 var_dump($stringArray);
+
+
+for ($i = 0; $i < count($stringArray); $i++) { ?>
+  <p>
+    <?php echo "{$stringArray[$i]}" ?>
+  </p>
+<?php
+}?>
