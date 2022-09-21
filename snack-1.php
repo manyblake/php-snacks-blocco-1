@@ -48,17 +48,12 @@ $fixtures = [
 ?>
 
 <ul>
-  <?php
-for ($i = 0; $i < count($fixtures); $i++) {
-?>
+  <?php for ($i = 0; $i < count($fixtures); $i++) { ?>
 
   <li>
-    <?php
-  echo "{$fixtures[$i]['home']} - {$fixtures[$i]['visitors']} | {$fixtures[$i]['homeScore']}-{$fixtures[$i]['visitorsScore']}";
-?>
+    <?php echo "{$fixtures[$i]['home']} - {$fixtures[$i]['visitors']} | {$fixtures[$i]['homeScore']}-{$fixtures[$i]['visitorsScore']}"; ?>
   </li>
-  <?php
-}
-?>
 
+  <?php
+}?>
 </ul>
